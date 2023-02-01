@@ -9,7 +9,7 @@ from django.urls import path
 # )
 
 from .views import (
-    StatusDetailAPIView,
+    StatusDetailUpdateDeleteView,
     StatusListCreateView,
 )
 
@@ -27,5 +27,5 @@ from .views import (
 
 urlpatterns = [
     path("status/", StatusListCreateView.as_view()),
-    path("status/<id>/", StatusDetailAPIView.as_view()),
+    path("status/<id>/", StatusDetailUpdateDeleteView.as_view()),
 ]

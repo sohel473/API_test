@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'status',
     'rest_framework',
     'corsheaders',
+    'django_cleanup'
 
 ]
 
